@@ -81,7 +81,7 @@ export function daysFromDate(date, daysCount, addDaysToDateFn, getDayOfWeekFn) {
 /**
  * @param {Events[]} events 
  * @param {number} slotMinutes 
- * @param {{function(number, number) => string[]}} addSlotTimeFn 
+ * @param {function(number, number) => string[]} addSlotTimeFn 
  * @param {function(Date) => number} getDayOfWeekFn
  * @returns {Event[]}
  */
