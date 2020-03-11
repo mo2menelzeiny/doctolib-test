@@ -4,7 +4,7 @@
  * @returns {Date}
  */
 export function addDaysToDate(date, days) {
-    return new Date(date.valueOf() + 864E5 * days);
+    return new Date(date.valueOf() + 864E5 * days)
 }
 
 /**
@@ -15,7 +15,7 @@ export function addDaysToDate(date, days) {
 export function incrementSlotTime(date, slotMinutes) {
     const newDate = new Date(date.valueOf() + (slotMinutes * 60 * 1000))
     const h = newDate.getHours()
-    const m = (newDate.getMinutes() < 10 ? '0' : '') + newDate.getMinutes();
+    const m = (newDate.getMinutes() < 10 ? '0' : '') + newDate.getMinutes()
     return h + ':' + m
 }
 
